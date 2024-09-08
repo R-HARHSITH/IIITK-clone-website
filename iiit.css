@@ -1,0 +1,479 @@
+/* for animation of changing colors in background below code in comments is used */
+/* body{ */
+    /* background-color: violet; */
+    /* animation-name:bg; */
+    /* animation-duration: 4s; */
+    /* animation-iteration-count: infinite; */
+/* } */
+/* @keyframes bg{ */
+    /* 0%   {background-color: violet; left: 0px; top: 0px;} */
+   /* 50% {background-color: yellow;left: 100px; top: 100px;} */
+   /*  */
+  /* } */
+  body{
+    background-color: white;
+    /* background-image: linear-gradient(90deg,rgba(32, 151, 255, 0.872),rgb(252, 219, 176)); */
+    /* background-image: linear-gradient(-90deg,rgba(253, 3, 3, 0.646),white); */
+    /* background-image: linear-gradient(-90deg,rgba(255, 196, 0, 0.781),rgba(37, 98, 250, 0.589)); */
+  }
+  ion-icon {
+    font-size: 24px;
+  }
+div.zero{
+    display: inline-block;
+   padding:12px;
+}
+/* div.one{ */
+    /* background-image: linear-gradient(-90deg,rgba(253, 3, 3, 0.646),white); */
+/* } */
+button{
+    /* for matching of used animation buttons below code in comments is used */
+    /* background-color:violet; */
+    /* animation-name:bg; */
+    /* animation-duration: 4s; */
+    /* animation-iteration-count: infinite; */
+    border:none;
+    padding:0px;
+    color:green;
+    font-size:20px;
+    background-color:white;
+    /* background-image: linear-gradient(-90deg,rgba(253, 3, 3, 0.646),white); */
+}
+button.btn1 a{
+    text-decoration: none;
+    color: green;
+}
+.icon{
+    border-width: 0px;
+    background-color: white;
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+    margin-top: 20px;
+}
+div.two{
+    display:none;
+    position:absolute;
+    background-color:white;
+}
+div.fixed{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color:white;
+}
+div.one button:hover{
+    text-decoration:underline;
+    color: green;
+    cursor: pointer;
+}
+div.zero:hover div.two{
+    display: block;
+    position:absolute;
+    background-color:white;
+
+}
+div.zero:hover div.two a{
+    display: block;
+    position:relative;
+    color:green;
+    background-color:white;
+    padding:8px 12px;
+    font-size:20px;
+    text-decoration: none;
+    
+}
+/* we can write about text in drop down above or we can write in below tag
+ /* */ 
+/* div.two a{ */
+    /*  */
+    /*  */
+/* } */
+div.zero:hover div.two a:hover{
+background-color:rgb(219, 219, 219);
+border-bottom: 2px solid green;
+}
+
+/* for second */
+div.three{
+    display:none;
+    position:absolute;
+    background-color:white;
+}
+div.zero:hover div.three{
+    display: block;
+    position:absolute;
+    background-color:white;
+}
+div.zero:hover div.three a{
+    display: block;
+    position:relative;
+    color:green;
+    background-color:white;
+    padding:8px 12px;
+    font-size:20px;
+    text-decoration: none;
+}
+div.zero:hover div.three a:hover{
+    background-color:rgb(219, 219, 219);
+    border-bottom: 2px solid green;
+    }
+    /* for third */
+    div.four{
+        display:none;
+        position:absolute;
+        background-color:white;
+    }
+    div.zero:hover div.four{
+        display: block;
+        position:absolute;
+        background-color:white;
+    }
+    div.zero:hover div.four a{
+        display: block;
+        position:relative;
+        color:green;
+        background-color:white;
+        padding:8px 12px;
+        font-size:20px;
+        text-decoration: none;
+    }
+    div.zero:hover div.four a:hover{
+        background-color:rgb(219, 219, 219);
+        border-bottom: 2px solid green;
+        }
+        /* for fourth */
+        div.five{
+            display:none;
+            position:absolute;
+            background-color:white;
+        }
+        div.zero:hover div.five{
+            display: block;
+            position:absolute;
+            background-color:white;
+        }
+        div.zero:hover div.five a{
+            display: block;
+            position:relative;
+            color:green;
+            background-color:white;
+            padding:8px 12px;
+            font-size:20px;
+            text-decoration: none;
+        }
+        div.zero:hover div.five a:hover{
+            background-color:rgb(219, 219, 219);
+            border-bottom: 2px solid green;
+            }
+            /* for fivth */
+            div.six{
+                display:none;
+                position:absolute;
+                background-color:white;
+            }
+            div.zero:hover div.six{
+                display: block;
+                position:absolute;
+                background-color:white;
+            }
+            div.zero:hover div.six a{
+                display: block;
+                position:relative;
+                color:green;
+                background-color:white;
+                padding:8px 12px;
+                font-size:20px;
+                text-decoration: none;
+            }
+            div.zero:hover div.six a:hover{
+                background-color:rgb(219, 219, 219);
+                border-bottom: 2px solid green;
+                }
+                div.slideshow{
+                    width: 1000px;
+                    position: relative;
+                    margin: auto;
+                    z-index: -1;
+                }
+                div.text{
+                    padding: 8px 12px;
+                    top: 0;
+                    position: absolute;
+                }
+                .fade {
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                  }
+                  
+                  @keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                  }
+                  
+                  /* On smaller screens, decrease text size */
+                  @media only screen and (max-width: 300px) {
+                    .text {font-size: 11px}
+                  }
+                /* div.slide{ */
+                    /* display:none; */
+                /* } */
+                * {box-sizing: border-box;}
+                h2.h{
+                    /* for text in blue color below image at left side */
+                    color: rgb(79, 79, 255);
+                    font-size: 16px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                div.middle{
+                    /* box for right side text below image */
+                    width: 500px;
+                    height: 700px;
+                    border: 1px transparent black;
+                    font-size: 18px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                h2.h1{
+                    /* for text in blue color below image at left side */
+                    color: rgb(79, 79, 255);
+                    font-size: 16px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                div.vision{
+                    /* box for right side text below image */
+                    width: 500px;
+                    height: 800px;
+                    /* border: 1px transparent black; */
+                    font-size: 18px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                    width: 600px;
+                    padding: 10px;
+                    height: 350px;
+                }
+                h2.h2{
+                    /* for text in blue color below image at left side */
+                    color: rgb(79, 79, 255);
+                    font-size: 16px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                div.Mission{
+                    /* box for right side text below image */
+                    width: 500px;
+                    height: 800px;
+                    /* border: 1px solid black; */
+                    font-size: 18px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                    float: right;
+                    width: 600px;
+                    padding: 10px;
+                    height: 300px;
+                }
+                h2.h3{
+                    /* for text in blue color below image at left side */
+                    color: rgb(79, 79, 255);
+                    font-size: 16px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                div.atal{
+                    /* box for right side text below image */
+                    width: 600px;
+                    height: 180px;
+                    border: 1px transparent black;
+                    font-size: 18px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                h2.h4{
+                    /* for text in blue color below image at left side */
+                    color: rgb(79, 79, 255);
+                    font-size: 16px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                div.msme{
+                    /* box for right side text below image */
+                    width: 500px;
+                    height: 350px;
+                    /* border: 1px solid black; */
+                    font-size: 18px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                    float: right;
+                    width: 600px;
+                    padding: 20px;
+                    padding-top: 0px;
+                    height: 190px;
+                }
+                div.border{
+                    border: 1px solid black;
+                    height:350px;
+                    
+                }
+                a.color{
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                    color:rgb(84, 91, 219);
+                    text-decoration: none;
+                }
+                table,th,td{
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+
+                }
+                caption.cap{
+                    color: blue;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                    font-size: 18px;
+                }
+                td.td{
+                    color:green;
+                    text-decoration: underline;
+                    font-size: 18px;
+                }
+               table{
+                /* for table */
+                    float: right;
+                    width: 600px;
+                    border: 1px solid black;
+                    padding: 10px;
+                    height: 400px;
+                }
+                div.topbox{
+                    border: 1px solid black;
+                    height:350px;
+                }
+            div.rightbox{
+                border: 1px solid black;
+                background-color: white;
+            }
+        div.middlebox{
+            width: 600px;
+            padding: 10px;
+            height: 400px;
+        }
+        div.box{
+            background-color: blue;
+            color: white;
+            padding:10px 0px;
+            font-family: Trebuchet MS, Helvetica, sans-serif;
+        }
+        div.box0{
+            display: inline-block;
+            width: 240px;
+            padding-left: 15px;
+        }
+        div.box1{
+            color: blue;
+            background-color: white;
+            border-bottom: 1px solid black;
+            padding: 5px;
+            font-family: Trebuchet MS, Helvetica, sans-serif;
+        }
+        div.middlebox2{
+            float: right;
+            width: 600px;
+            padding: 10px;
+            height: 400px;
+            top: 0px;
+        }
+        div.box1 a{
+            text-decoration: none;
+            color: blue;
+        }
+        div.box2{
+            background-color: blue;
+            color: white;
+            padding:10px 0px;
+            font-family: Trebuchet MS, Helvetica, sans-serif;
+        }
+        div.box02{
+            display: inline-block;
+            width: 240px;
+            padding-left: 15px;
+        }  
+        div.box12{
+            color: blue;
+            background-color: white;
+            border-bottom: 1px solid black;
+            padding: 5px;
+            font-family: Trebuchet MS, Helvetica, sans-serif;
+        }
+
+        /* .card1{ */
+            /* border-radius: 10px; */
+            /* width: 430px; */
+            /* box-shadow: 0px 0px 1px 1px grey; */
+        /*  */
+        /* } */
+        /* .card1-head{ */
+            /* background-color: rgb(59, 111, 241); */
+            /* color: white; */
+            /* height: 60px; */
+            /* padding: 10px; */
+            /* border-top-right-radius: 5px; */
+            /* border-top-left-radius: 5px; */
+        /* } */
+        ion-icon {
+            color:black;
+            border-width: 0px;
+    background-color: white;
+    border-radius: 50px;
+    height:30px;
+    width:30px;
+          }
+          ion-icon.one:hover{
+            color:blue; 
+          }
+          ion-icon.two:hover{
+            color:blue; 
+          }
+          ion-icon.three:hover{
+            color:blue; 
+          }
+          ion-icon.four:hover{
+            color:red; 
+          }
+                div.last div{
+
+                    display: block;
+                    background-color: rgb(184, 184, 184);
+                   padding:10px;
+                   padding-left: 40px;
+                   text-decoration: none;
+                   justify-content: center;
+                   columns:150px 4;
+                }
+                div.lastone a{
+                    font-size:20px;
+                    border:none;
+                    padding: 10px;
+                    color:black;
+                    text-decoration: none;
+                   
+                    float:left;
+                     width: 100%;
+                    padding:0px;
+                    
+                }
+                div.last center{
+                    background-color: rgb(184, 184, 184);
+                }
+                div.last center a{
+                    padding:0px 10px;
+                }
+                #know{
+                    padding: 2px;
+                }
+                div.complete{
+                      color: black;
+                      background-color: grey;
+                    border: 1px transparent black;
+                    height: 200px;
+                    padding: 150px;
+                    padding-left:500px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                div.complete1{
+                    padding-right: 50px;
+                }
+                /* div{ */
+                    /* border:1px solid black; */
+                /* } */

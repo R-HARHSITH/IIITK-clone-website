@@ -1,0 +1,221 @@
+body{
+    background-color: white;
+    /* background-image: linear-gradient(90deg,rgba(32, 151, 255, 0.872),rgb(252, 219, 176)); */
+    /* background-image: linear-gradient(-90deg,rgba(253, 3, 3, 0.646),white); */
+    /* background-image: linear-gradient(-90deg,rgba(255, 196, 0, 0.781),rgba(37, 98, 250, 0.589)); */
+  }
+div.zero{
+    display: inline-block;
+   padding:12px;
+}
+button{
+    border:none;
+    padding:0px;
+    color:green;
+    font-size:20px;
+    background-color:white;
+    /* background-image: linear-gradient(-90deg,rgba(253, 3, 3, 0.646),white); */
+}
+div.two{
+    display:none;
+    position:absolute;
+    background-color:white;
+}
+div.fixed{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color:white;
+}
+div.one button:hover{
+    text-decoration:underline;
+    color: green;
+    cursor: pointer;
+}
+div.zero:hover div.two{
+    display: block;
+    position:absolute;
+    background-color:white;
+
+}
+div.zero:hover div.two a{
+    display: block;
+    position:relative;
+    color:green;
+    background-color:white;
+    padding:8px 12px;
+    font-size:20px;
+    text-decoration: none;
+    
+}
+/* we can write about text in drop down above or we can write in below tag
+ /* */ 
+/* div.two a{ */
+    /*  */
+    /*  */
+/* } */
+div.zero:hover div.two a:hover{
+background-color:rgb(219, 219, 219);
+border-bottom: 2px solid green;
+}
+
+/* for second */
+div.three{
+    display:none;
+    position:absolute;
+    background-color:white;
+}
+div.zero:hover div.three{
+    display: block;
+    position:absolute;
+    background-color:white;
+}
+div.zero:hover div.three a{
+    display: block;
+    position:relative;
+    color:green;
+    background-color:white;
+    padding:8px 12px;
+    font-size:20px;
+    text-decoration: none;
+}
+div.zero:hover div.three a:hover{
+    background-color:rgb(219, 219, 219);
+    border-bottom: 2px solid green;
+    }
+    /* for third */
+    div.four{
+        display:none;
+        position:absolute;
+        background-color:white;
+    }
+    div.zero:hover div.four{
+        display: block;
+        position:absolute;
+        background-color:white;
+    }
+    div.zero:hover div.four a{
+        display: block;
+        position:relative;
+        color:green;
+        background-color:white;
+        padding:8px 12px;
+        font-size:20px;
+        text-decoration: none;
+    }
+    div.zero:hover div.four a:hover{
+        background-color:rgb(219, 219, 219);
+        border-bottom: 2px solid green;
+        }
+        /* for fourth */
+        div.five{
+            display:none;
+            position:absolute;
+            background-color:white;
+        }
+        div.zero:hover div.five{
+            display: block;
+            position:absolute;
+            background-color:white;
+        }
+        div.zero:hover div.five a{
+            display: block;
+            position:relative;
+            color:green;
+            background-color:white;
+            padding:8px 12px;
+            font-size:20px;
+            text-decoration: none;
+        }
+        div.zero:hover div.five a:hover{
+            background-color:rgb(219, 219, 219);
+            border-bottom: 2px solid green;
+            }
+            /* for fivth */
+            div.six{
+                display:none;
+                position:absolute;
+                background-color:white;
+            }
+            div.zero:hover div.six{
+                display: block;
+                position:absolute;
+                background-color:white;
+            }
+            div.zero:hover div.six a{
+                display: block;
+                position:relative;
+                color:green;
+                background-color:white;
+                padding:8px 12px;
+                font-size:20px;
+                text-decoration: none;
+            }
+            div.zero:hover div.six a:hover{
+                background-color:rgb(219, 219, 219);
+                border-bottom: 2px solid green;
+                }
+                div.last div{
+
+                    display: block;
+                    background-color: rgb(184, 184, 184);
+                   padding:10px;
+                   padding-left: 40px;
+                   text-decoration: none;
+                   justify-content: center;
+                   columns:150px 4;
+                }
+                div.lastone a{
+                    font-size:20px;
+                    border:none;
+                    padding: 10px;
+                    color:black;
+                    text-decoration: none;
+                   
+                    float:left;
+                     width: 100%;
+                    padding:0px;
+                    
+                }
+                div.last center{
+                    background-color: rgb(184, 184, 184);
+                }
+                div.last center a{
+                    padding:0px 10px;
+                }
+                table,th,td{
+                    font-size: 24px;
+                    font-family: Trebuchet MS, Helvetica, sans-serif;
+                }
+                div.complete{
+                    color: black;
+                    background-color: grey;
+                  border: 1px transparent black;
+                  height: 100px;
+                  padding: 150px;
+                  padding-left:500px;
+                  font-family: Trebuchet MS, Helvetica, sans-serif;
+              }
+              div.complete1{
+                  padding-right: 50px;
+              }
+              ion-icon {
+                color:black;
+                border-width: 0px;
+        background-color: white;
+        border-radius: 50px;
+        height:30px;
+        width:30px;
+              }
+              ion-icon.one:hover{
+                color:blue; 
+              }
+              ion-icon.two:hover{
+                color:blue; 
+              }
+              ion-icon.three:hover{
+                color:blue; 
+              }
+              ion-icon.four:hover{
+                color:red; 
+              }
